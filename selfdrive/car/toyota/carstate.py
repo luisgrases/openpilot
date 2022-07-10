@@ -177,7 +177,7 @@ class CarState(CarStateBase):
       self.acc_type = cp.vl["ACC_CONTROL"]["ACC_TYPE"]
       ret.stockFcw = bool(cp.vl["ACC_HUD"]["FCW"])
     elif self.CP.carFingerprint in TSS2_CAR:
-      self.acc_type = cp_cam.vl["ACC_CONTROL"]["ACC_TYPE"]
+#       self.acc_type = cp_cam.vl["ACC_CONTROL"]["ACC_TYPE"]
       ret.stockFcw = bool(cp_cam.vl["ACC_HUD"]["FCW"])
 
     # some TSS2 cars have low speed lockout permanently set, so ignore on those cars
